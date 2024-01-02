@@ -3,6 +3,7 @@ package com.example.mapweek;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button saturday;
     private Button sunday;
     private Button plus;
-    private Button nastrouki;
+    private Button settings;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +30,22 @@ public class MainActivity extends AppCompatActivity {
         friday = findViewById(R.id.FRI);
         saturday = findViewById(R.id.SUT);
         sunday = findViewById(R.id.SUN);
-        nastrouki = findViewById(R.id.nastroki);
+        settings = findViewById(R.id.nastroki);
         plus = findViewById(R.id.plus);
     }
 
+    public void plus(View view) {
+Intent intent = new Intent(this, AddWeek.class);
+startActivity(intent);
+
+    }
+
+    public void nastrouki(View view) {
+
+    }
+
     public void mon(View view) {
+
     }
 
     public void tue(View view) {
@@ -57,14 +69,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sun(View view) {
-
-    }
-
-    public void nastrouki(View view) {
-
-    }
-
-    public void plus(View view) {
 
     }
 }

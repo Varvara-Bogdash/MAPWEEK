@@ -9,16 +9,17 @@
 
     <Button
         android:id="@+id/nastroki"
-        android:layout_width="21dp"
-        android:layout_height="56dp"
+        android:layout_width="69dp"
+        android:layout_height="58dp"
         android:onClick="nastrouki"
-        android:text="*"
+        android:text="@string/add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.894"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.976" />
+
     <TextView android:id="@+id/textView2" android:layout_width="201dp" android:layout_height="156dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
     <Button android:id="@+id/plus" android:layout_width="104dp" android:layout_height="104dp" android:onClick="plus" android:text="+" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.472" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="1.0"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
