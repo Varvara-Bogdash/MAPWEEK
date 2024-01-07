@@ -9,6 +9,14 @@
     <string name="beginningOfSub">время начала</string>
     <string name="endOfSub">время окончания</string>
     <string name="add">добавить</string>
+    <string name="friday">Пт</string>
+    <string name="monday">ПН</string>
+    <string name="sunday">ВС</string>
+    <string name="saturday">СБ</string>
+    <string name="thursday">ЧТ</string>
+    <string name="tuesday">ВТ</string>
+    <string name="wednesday">СР</string>
+    <string name="plus">+</string>
     <string-array name="dayOfWeek">
         <item>понедельник</item>
         <item>вторник</item>

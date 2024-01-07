@@ -19,7 +19,8 @@
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.023"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextCorpus"
@@ -33,15 +34,18 @@
         app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.117" />
+        app:layout_constraintVertical_bias="0.117"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextRoom"
         android:layout_width="325dp"
         android:layout_height="72dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/room"
         android:inputType="text"
+        android:textColorHint="#8D6E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.604"
@@ -56,12 +60,14 @@
         android:ems="10"
         android:hint="@string/teacher"
         android:inputType="text"
+        android:textColorHint="#8D6E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.611"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.242" />
+        app:layout_constraintVertical_bias="0.242"
+        android:autofillHints="" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -99,7 +105,8 @@
         app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.63" />
+        app:layout_constraintVertical_bias="0.63"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTimeBeginning"
@@ -108,12 +115,14 @@
         android:ems="10"
         android:hint="@string/beginningOfSub"
         android:inputType="time"
+        android:textColorHint="#8D6E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.699" />
+        app:layout_constraintVertical_bias="0.699"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextTimeEnd"
@@ -122,12 +131,14 @@
         android:ems="10"
         android:hint="@string/endOfSub"
         android:inputType="time"
+        android:textColorHint="#8D6E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
+        app:layout_constraintVertical_bias="0.774"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/buttonAdd"
