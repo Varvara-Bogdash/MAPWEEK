@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 public class AddWeek extends AppCompatActivity {
 private EditText editTextSub;
@@ -17,6 +17,7 @@ private EditText editTextTeacher;
 private EditText editTextTimeBeginning;
 private EditText editTextTimeEnd;
 private Spinner dayOfWeek;
+private Button buttonAdd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,22 +28,19 @@ private Spinner dayOfWeek;
         editTextTeacher = findViewById(R.id.editTextTeacher);
         editTextTimeBeginning = findViewById(R.id.editTextTimeBeginning);
         editTextTimeEnd = findViewById(R.id.editTextTimeEnd);
+        dayOfWeek = findViewById(R.id.dayOfWeek);
+        buttonAdd = findViewById(R.id.buttonAdd);
     }
 
     public void addInApplication(View view) {
-        int time = Integer.parseInt(editTextTimeBeginning.getText().toString());
- //       if () {
-  //          textName.setHint("Нужно ввести имя");
-   //    } else {
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("subject", editTextSub.getText());
-        intent.putExtra("subject", editTextRoom.getText());
-        intent.putExtra("subject", editTextSub.getText());
-        intent.putExtra("subject", editTextSub.getText());
-        intent.putExtra("subject", editTextSub.getText());
-        intent.putExtra("subject", editTextSub.getText());
+        intent.putExtra("class", editTextRoom.getText());
+        intent.putExtra("corpus", editTextCorpus.getText());
+        intent.putExtra("teacher", editTextTeacher.getText());
+        intent.putExtra("timeBeginning", editTextTimeBeginning.getText());
+        intent.putExtra("timeEnd", editTextTimeEnd.getText());
         intent.putExtra("dayOfWeek", dayOfWeek.getSelectedItem().toString());
         startActivity(intent);
-//        }
     }
 }

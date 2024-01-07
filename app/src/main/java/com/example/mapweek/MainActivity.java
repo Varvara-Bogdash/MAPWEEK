@@ -7,41 +7,49 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
-    private Button monday;
-    private Button tuesday;
-    private Button wednesday;
-    private Button thursday;
-    private Button friday;
-    private Button saturday;
-    private Button sunday;
-    private Button plus;
-    private Button settings;
+    String sub;
+    String room;
+    String corpus;
+    String teacher;
+    String timeBeginning;
+    String timeEnd;
+    String dayOfWeek;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        monday = findViewById(R.id.MON);
-        tuesday = findViewById(R.id.TUE);
-        wednesday = findViewById(R.id.WED);
-        thursday = findViewById(R.id.THU);
-        friday = findViewById(R.id.FRI);
-        saturday = findViewById(R.id.SUT);
-        sunday = findViewById(R.id.SUN);
-        settings = findViewById(R.id.nastroki);
-        plus = findViewById(R.id.plus);
+        Button monday = findViewById(R.id.MON);
+        Button tuesday = findViewById(R.id.TUE);
+        Button wednesday = findViewById(R.id.WED);
+        Button thursday = findViewById(R.id.THU);
+        Button friday = findViewById(R.id.FRI);
+        Button saturday = findViewById(R.id.SUT);
+        Button sunday = findViewById(R.id.SUN);
+        Button settings = findViewById(R.id.nastroki);
+        Button plus = findViewById(R.id.plus);
+        TextView textView = findViewById(R.id.textView2);
+
+//        sub = Objects.requireNonNull(getIntent().getExtras()).getString("subject");
+//        room = Objects.requireNonNull(getIntent().getExtras()).getString("class");
+//        corpus = Objects.requireNonNull(getIntent().getExtras()).getString("corpus");
+//        teacher = Objects.requireNonNull(getIntent().getExtras()).getString("teacher");
+//        timeBeginning = Objects.requireNonNull(getIntent().getExtras()).getString("timeBeginning");
+//        timeEnd = Objects.requireNonNull(getIntent().getExtras()).getString("timeEnd");
+//        dayOfWeek = Objects.requireNonNull(getIntent().getExtras()).getString("dayOfWeek");
     }
 
     public void plus(View view) {
-Intent intent = new Intent(this, AddWeek.class);
-startActivity(intent);
-
-    }
-
-    public void nastrouki(View view) {
-
+        Intent intent = new Intent(this, AddWeek.class);
+        startActivity(intent);
     }
 
     public void mon(View view) {
@@ -70,5 +78,8 @@ startActivity(intent);
 
     public void sun(View view) {
 
+    }
+
+    public void settings(View view) {
     }
 }
