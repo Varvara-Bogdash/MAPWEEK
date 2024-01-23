@@ -28,7 +28,7 @@ private Button buttonAdd;
         editTextTeacher = findViewById(R.id.editTextTeacher);
         editTextTimeBeginning = findViewById(R.id.editTextTimeBeginning);
         editTextTimeEnd = findViewById(R.id.editTextTimeEnd);
-        dayOfWeek = findViewById(R.id.dayOfWeek);
+        dayOfWeek = findViewById(R.id.spinner);
         buttonAdd = findViewById(R.id.buttonAdd);
     }
 
