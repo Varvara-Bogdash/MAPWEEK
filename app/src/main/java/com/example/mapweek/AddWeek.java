@@ -30,6 +30,8 @@ private Button buttonAdd;
         editTextTimeEnd = findViewById(R.id.editTextTimeEnd);
         dayOfWeek = findViewById(R.id.spinner);
         buttonAdd = findViewById(R.id.buttonAdd);
+
+        //тест коммита
     }
 
     public void addInApplication(View view) {
