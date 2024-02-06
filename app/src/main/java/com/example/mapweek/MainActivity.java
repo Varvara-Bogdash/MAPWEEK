@@ -21,63 +21,109 @@ public class MainActivity extends AppCompatActivity {
     String timeBeginning;
     String timeEnd;
     String dayOfWeek;
-
+    int countOfDays = 7;
+    TextView textView;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button monday = findViewById(R.id.MON);
-        Button tuesday = findViewById(R.id.TUE);
-        Button wednesday = findViewById(R.id.WED);
-        Button thursday = findViewById(R.id.THU);
-        Button friday = findViewById(R.id.FRI);
-        Button saturday = findViewById(R.id.SUT);
-        Button sunday = findViewById(R.id.SUN);
         Button settings = findViewById(R.id.nastroki);
         Button plus = findViewById(R.id.plus);
-        TextView textView = findViewById(R.id.textView2);
+        textView = findViewById(R.id.textView2);
 
-//        sub = Objects.requireNonNull(getIntent().getExtras()).getString("subject");
-//        room = Objects.requireNonNull(getIntent().getExtras()).getString("class");
-//        corpus = Objects.requireNonNull(getIntent().getExtras()).getString("corpus");
-//        teacher = Objects.requireNonNull(getIntent().getExtras()).getString("teacher");
-//        timeBeginning = Objects.requireNonNull(getIntent().getExtras()).getString("timeBeginning");
-//        timeEnd = Objects.requireNonNull(getIntent().getExtras()).getString("timeEnd");
-//        dayOfWeek = Objects.requireNonNull(getIntent().getExtras()).getString("dayOfWeek");
     }
 
     public void plus(View view) {
         Intent intent = new Intent(this, AddWeek.class);
         startActivity(intent);
+        backIn();
     }
 
+    private void backIn() {
+        sub = Objects.requireNonNull(getIntent().getExtras()).getString("subject");
+        room = Objects.requireNonNull(getIntent().getExtras()).getString("class");
+        corpus = Objects.requireNonNull(getIntent().getExtras()).getString("corpus");
+        teacher = Objects.requireNonNull(getIntent().getExtras()).getString("teacher");
+        timeBeginning = Objects.requireNonNull(getIntent().getExtras()).getString("timeBeginning");
+        timeEnd = Objects.requireNonNull(getIntent().getExtras()).getString("timeEnd");
+        dayOfWeek = Objects.requireNonNull(getIntent().getExtras()).getString("dayOfWeek");
+        switch (countOfDays){
+            case 1:
+                if (dayOfWeek.toString().equals("понедельник")){
+                    mon(textView);
+                } else {
+                    break;
+                }
+            case 2:
+                if (dayOfWeek.toString().equals("вторник")){
+                    tue(textView);
+                } else {
+                    break;
+                }
+            case 3:
+                if (dayOfWeek.toString().equals("среда")){
+                    wed(textView);
+                } else {
+                    break;
+                }
+            case 4:
+                if (dayOfWeek.toString().equals("четверг")){
+                    thu(textView);
+                } else {
+                    break;
+                }
+            case 5:
+                if (dayOfWeek.toString().equals("пятница")){
+                    fri(textView);
+                } else {
+                    break;
+                }
+            case 6:
+                if (dayOfWeek.toString().equals("суббота")){
+                    sut(textView);
+                } else {
+                    break;
+                }
+            case 7:
+                sun(textView);
+                    break;
+           }
+    }
+
+    @SuppressLint("SetTextI18n")
     public void mon(View view) {
-
+textView.setText("Предмет: " + sub + "\n" + "Учитель:" + teacher + "\n" + "Корпус:" + corpus + "\n" + "Кабинет:" + room + "\n" + "День недели:" + dayOfWeek);
     }
 
+    @SuppressLint("SetTextI18n")
     public void tue(View view) {
-
+        textView.setText("Предмет: " + sub + "\n" + "Учитель:" + teacher + "\n" + "Корпус:" + corpus + "\n" + "Кабинет:" + room + "\n" + "День недели:" + dayOfWeek);
     }
 
+    @SuppressLint("SetTextI18n")
     public void wed(View view) {
-
+        textView.setText("Предмет: " + sub + "\n" + "Учитель:" + teacher + "\n" + "Корпус:" + corpus + "\n" + "Кабинет:" + room + "\n" + "День недели:" + dayOfWeek);
     }
 
+    @SuppressLint("SetTextI18n")
     public void thu(View view) {
-
+        textView.setText("Предмет: " + sub + "\n" + "Учитель:" + teacher + "\n" + "Корпус:" + corpus + "\n" + "Кабинет:" + room + "\n" + "День недели:" + dayOfWeek);
     }
 
+    @SuppressLint("SetTextI18n")
     public void fri(View view) {
-
+        textView.setText("Предмет: " + sub + "\n" + "Учитель:" + teacher + "\n" + "Корпус:" + corpus + "\n" + "Кабинет:" + room + "\n" + "День недели:" + dayOfWeek);
     }
 
+    @SuppressLint("SetTextI18n")
     public void sut(View view) {
-
+        textView.setText("Предмет: " + sub + "\n" + "Учитель:" + teacher + "\n" + "Корпус:" + corpus + "\n" + "Кабинет:" + room + "\n" + "День недели:" + dayOfWeek);
     }
 
+    @SuppressLint("SetTextI18n")
     public void sun(View view) {
-
+        textView.setText("Предмет: " + sub + "\n" + "Учитель:" + teacher + "\n" + "Корпус:" + corpus + "\n" + "Кабинет:" + room + "\n" + "День недели:" + dayOfWeek);
     }
 
     public void settings(View view) {

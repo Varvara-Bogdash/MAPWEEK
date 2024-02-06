@@ -69,31 +69,6 @@
         app:layout_constraintVertical_bias="0.242"
         android:autofillHints="" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="323dp"
-        android:layout_height="57dp"
-        android:entries="@array/dayOfWeek"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.579"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554" />
-
-    <TextView
-        android:id="@+id/DayOfWeek"
-        android:layout_width="282dp"
-        android:layout_height="57dp"
-        android:text="@string/dayWeek"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.395"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="323dp"
@@ -102,43 +77,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.63"
+        app:layout_constraintVertical_bias="0.576"
         tools:ignore="TextSizeCheck" />
-
-    <EditText
-        android:id="@+id/editTextTimeBeginning"
-        android:layout_width="198dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:hint="@string/beginningOfSub"
-        android:inputType="time"
-        android:textColorHint="#8D6E63"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.699"
-        android:autofillHints="" />
-
-    <EditText
-        android:id="@+id/editTextTimeEnd"
-        android:layout_width="198dp"
-        android:layout_height="52dp"
-        android:ems="10"
-        android:hint="@string/endOfSub"
-        android:inputType="time"
-        android:textColorHint="#8D6E63"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774"
-        android:autofillHints="" />
 
     <Button
         android:id="@+id/buttonAdd"
@@ -146,10 +88,61 @@
         android:layout_height="71dp"
         android:onClick="addInApplication"
         android:text="@string/add"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/design_default_color_background"
+        android:textColorHint="@color/design_default_color_background"
+        android:textColorLink="@color/design_default_color_surface"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.881" />
+
+    <EditText
+        android:id="@+id/DayOfWeekEditText"
+        android:layout_width="303dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="@string/dayWeek"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484"
+        tools:ignore="TextFields"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextTimeBegining"
+        android:layout_width="275dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="@string/beginningOfSub"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662"
+        android:autofillHints=""
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/editTextTimeEnd"
+        android:layout_width="269dp"
+        android:layout_height="57dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/endOfSub"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.758"
+        tools:ignore="TextFields" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

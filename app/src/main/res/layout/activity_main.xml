@@ -1,89 +1,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/TUE"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:onClick="tue"
-        android:text="@string/tuesday"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-    <Button
-        android:id="@+id/MON" android:layout_width="56dp"
-        android:layout_height="56dp" android:onClick="mon"
-        android:text="@string/monday"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"/>
-    <Button
-        android:id="@+id/WED"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:onClick="wed"
-        android:text="@string/wednesday"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.315"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"/>
-    <Button
-        android:id="@+id/THU"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:onClick="thu"
-        android:text="@string/thursday"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"/>
-    <Button
-        android:id="@+id/FRI"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:onClick="fri"
-        android:text="@string/friday"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"/>
-    <Button
-        android:id="@+id/SUT"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:onClick="sut"
-        android:text="@string/saturday"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.783"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"/>
-    <Button
-        android:id="@+id/SUN"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:onClick="sun"
-        android:text="@string/sunday"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"/>
-
-    <Button
         android:id="@+id/nastroki"
         android:layout_width="69dp"
         android:layout_height="58dp"
@@ -100,13 +17,12 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="407dp"
-        android:layout_height="115dp"
+        android:layout_height="522dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.113" />
+        app:layout_constraintVertical_bias="0.138" />
 
     <Button android:id="@+id/plus"
         android:layout_width="104dp"
