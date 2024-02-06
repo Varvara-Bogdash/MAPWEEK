@@ -31,8 +31,10 @@ public class AddWeek extends AppCompatActivity {
         editTextTeacher = findViewById(R.id.editTextTeacher);
         editTextTimeBeginning = findViewById(R.id.editTextTimeBegining);
         editTextTimeEnd = findViewById(R.id.editTextTimeEnd);
-        dayOfWeek = findViewById(R.id.dayOfWeek);
+        dayOfWeek = findViewById(R.id.spinner);
         buttonAdd = findViewById(R.id.buttonAdd);
+
+        //тест коммита
     }
 
     public void addInApplication(View view) {
